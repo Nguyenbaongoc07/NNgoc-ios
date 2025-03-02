@@ -1,15 +1,16 @@
-#!url=https://raw.githubusercontent.com/Nguyenbaongoc07/NNgoc-ios/tree/master/Locket_Gold_Nobita.sgmodule
-#!name=ALL-Script
+#!url=https://raw.githubusercontent.com/Nguyenbaongoc07/NNgoc-ios/refs/heads/master/NNgoc-ios.sgmodule
+#!name=Script-ios
 #!desc=By:NNgoc-ios
+#!Ít thì 5 lít
+#!Lightroom,Picsart,VSCO,Chess,Camscanner,PhotoRoom,KineMaster,SharpAI,WeatherFIT,Locket-gold,Soundcloud-go,Wink,...
+
 
 [General]
 bypass-system = true
 skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
-
 [MITM]
 hostname = api.revenuecat.com, buy.itunes.apple.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api.adapty.io, carrotweather.herokuapp.com, lcs-mobile-cops.adobe.io, order.creativeappnow.com, api.mwm-users.com, us-central1-muslim-pro-app.cloudfunctions.net, api.gptkeyboard.app, prod.studysmarter.de, api.qonversion.io, api.blinkist.com, subscription.grammarly.com, api.esound.app, api.purchasely.io, spclient.wg.spotify.com, api-sub.meitu.com,api-account.kinemasters.com,api.intsig.net,api.chess.com,
-
 [Script]
 http-response ^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$) script-path=https://raw.githubusercontent.com/quocchienn/Make/refs/heads/crack/crack.js, requires-body=true, timeout=5, tag=Crack
 http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path=https://raw.githubusercontent.com/quocchienn/Make/refs/heads/crack/VSCO.js, requires-body=true, timeout=5, tag=VSCO
